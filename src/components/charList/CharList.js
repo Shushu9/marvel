@@ -19,7 +19,7 @@ const CharList = (props) => {
 
     useEffect(() => {
         onRequest(offset, true);
-    }, [])
+    }, [])// eslint-disable-line
 
     const onRequest = (offset, initial) => {
         initial ? setNewItemLoading(false) : setNewItemLoading(true);
