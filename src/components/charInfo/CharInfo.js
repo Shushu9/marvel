@@ -17,7 +17,7 @@ const CharInfo = (props) => {
 
     useEffect(() => {
         updateChar()
-    }, [props.charId])
+    }, [props.charId])// eslint-disable-line
 
 
     const updateChar = () => {
