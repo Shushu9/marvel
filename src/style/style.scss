@@ -30,6 +30,7 @@ a {
     text-decoration: none;
     color: inherit;
     display: inline-block;
+
     &:hover {
         text-decoration: none;
         color: inherit;
@@ -44,7 +45,7 @@ p {
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
-    margin: 0; 
+    margin: 0;
 }
 
 .app {
@@ -52,12 +53,31 @@ input::-webkit-inner-spin-button {
     margin: 0 auto;
     padding: 50px 0 50px 0;
     position: relative;
+
     .bg-decoration {
         position: absolute;
         right: -174px;
         bottom: -70px;
         z-index: -1;
     }
+
+    @media (max-width: 1200px) {
+        width: 960px;
+    }
+
+    @media (max-width: 992px) {
+        width: 720px;
+    }
+
+    @media (max-width: 768px) {
+        width: 540px;
+    }
+
+    @media (max-width: 576px) {
+        width: 100%;
+        margin: 0 10px;
+    }
+
 }
 
 main {
@@ -73,9 +93,11 @@ main {
     0% {
         opacity: 1
     }
+
     50% {
         opacity: .4
     }
+
     100% {
         opacity: 1
     }
