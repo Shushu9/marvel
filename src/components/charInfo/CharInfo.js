@@ -71,7 +71,6 @@ const View = ({ data }) => {
             <div className="char__comics">Comics:</div>
             <ul className="char__comics-list">
                 {comics.length > 0 ? null : 'There is no comics with this character'}
-
                 {
                     comics.map((item, i) => {
                         if (i > 9) return null;
@@ -80,12 +79,10 @@ const View = ({ data }) => {
                                 <Link to={`/comics/${item.resourceURI.slice(43)}`}>
                                     {item.name}
                                 </Link>
-
                             </li>
                         )
                     })
                 }
-
             </ul>
         </>
     )

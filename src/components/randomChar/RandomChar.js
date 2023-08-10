@@ -78,7 +78,10 @@ const View = ({ data }) => {
                         className="button button__main">
                         <div className="inner">homepage</div>
                     </a>
-                    <a href={wiki} className="button button__secondary">
+                    <a href={wiki}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="button button__secondary">
                         <div className="inner">Info</div>
                     </a>
                 </div>
