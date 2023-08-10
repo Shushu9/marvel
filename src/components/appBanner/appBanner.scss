@@ -8,6 +8,12 @@
         padding: 0 25px 0 45px;
         display: grid;
         grid-template-columns: 152px auto 133px;
+
+        @media (max-width: 768px) {
+            display: flex;
+            justify-content: space-between;
+        }
+
         &-text {
             font-weight: bold;
             font-size: 24px;
@@ -15,6 +21,10 @@
             color: #FFFFFF;
             padding-left: 83px;
             padding-top: 18px;
+
+            @media (max-width: 768px) {
+                display: none;
+            }
         }
     }
 }

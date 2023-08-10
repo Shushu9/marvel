@@ -1,16 +1,27 @@
 @import '../../style/variables.scss';
 
 .randomchar {
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 50%);
     align-items: center;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
+
+    @media (max-width: 1200px) {
+        grid-template-columns: 1fr;
+    }
 
     &__block {
         padding: 40px 35px;
         display: grid;
         grid-template-columns: 180px auto;
         column-gap: 30px;
+        min-height: 180px;
+
+        @media (max-width: 576px) {
+            padding: 20px 15px;
+        }
+
     }
 
     &__img {
@@ -48,6 +59,10 @@
         padding: 40px 35px;
         background-color: $dark;
         position: relative;
+
+        @media (max-width: 576px) {
+            padding: 20px 15px;
+        }
 
         button {
             margin-top: 13px;

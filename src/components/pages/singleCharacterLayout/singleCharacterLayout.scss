@@ -7,9 +7,39 @@
     column-gap: 50px;
     align-items: start;
 
+
+    @media (max-width: 1200px) {
+        grid-template-columns: 290px 490px;
+    }
+
+    @media (max-width: 992px) {
+        grid-template-columns: 290px 400px;
+        column-gap: 30px;
+    }
+
+    @media (max-width: 768px) {
+        grid-template-columns: 250px auto;
+    }
+
+    @media (max-width: 576px) {
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+    }
+
     &__char-img {
         width: 293px;
-        height: 293px;
+
+        @media (max-width: 768px) {
+            width: 250px;
+            height: auto
+        }
+
+        @media (max-width: 576px) {
+            max-width: 290px;
+            width: 100%;
+            margin: 0 auto;
+
+        }
     }
 
     &__name {
