@@ -76,7 +76,7 @@ const View = ({ data }) => {
                         if (i > 9) return null;
                         return (
                             <li key={i} className="char__comics-item">
-                                <Link to={`/comics/${item.resourceURI.slice(43)}`}>
+                                <Link to={`/marvel/build/comics/${item.resourceURI.slice(43)}`}>
                                     {item.name}
                                 </Link>
                             </li>
